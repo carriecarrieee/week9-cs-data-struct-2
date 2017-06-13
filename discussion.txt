@@ -1,0 +1,99 @@
+Part 1: Discussion Questions
+
+
+Recursion
+
+1.  In your own words, what is recursion?
+
+    Recursion is used when a function calls itself.
+
+2.  Why is it necessary to have a base case?
+
+    A base case is necessary so that the function knows when to stop calling itself, avoiding infinite loops.
+
+Graphs
+
+1.  What is a graph?
+
+    A graph is a concept similar to a tree. It can contain cycles and has nodes connected by edges or arcs, with relationships that are directed or non-directed.
+
+2.  How is a graph different from a tree?
+
+    A graph is different from a tree in that graphs are primarily used to model relationships between things that are not necessarily hierarchical like trees are.  Trees are directed, acyclic graphs.
+
+    All trees are graphs, but not all graphs are trees.
+
+3.  Give an example of something that would be good to model with a graph.
+
+    An example that would be good to model with a graph is a social network, like Facebook or LinkedIn.
+
+
+
+Performance of Different Data Structures
+
+Fill in the missing spots in the chart with the correct runtimes. Do this by reasoning through how the data structures work, NOT by looking up the solution. Add-R means add to the right/end/top and Add-L means add to the left/beginning/bottom. There are X’s in the spots where that operation doesn’t make sense for that data structure (for instance, you can’t index a stack, or pop from the end of a queue). We’ve provided the first few answers for you.
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure              Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)         O(1)    O(n)    O(1)    O(n)    O(n)    O(1)
+Linked List                 O(n)    O(n)    O(1)    O(1)    O(1)    O(n)
+Doubly-Linked List          O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+Queue (as Array)                X      X    O(1)      X     O(n)      X
+Queue (as LL or DLL)            X      X    O(1)      X     O(1)      X
+Stack (as Array, LL, or DLL)    X      X    O(1)      X       X     O(1)
+Deque (as DLL)                  X      X    O(1)    O(1)    O(1)    O(1)
+
+Index: Find an item in the structure when you know its position
+Search: Find an item in the structure when you know its data
+Add(R/L): Set a key in set/dictionary or add node to tree
+Pop(R/L): Remove a key or node
+
+
+
+Fill in Runtime and Memory:
+
+The answers for dictionary have been provided; you should fill in the rest:
+
+Data Structure          Get     Add     Delete  Iterate     Memory
+Dictionary (Hash Map)   O(1)    O(1)    O(1)    O(n)        medium
+Set (Hash Map)          O(1)    O(1)    O(1)    O(n)        medium     
+Binary Search Tree      O(logn) O(logn) O(logn) O(logn)     low
+
+Tree
+
+Get: Find an item in the structure
+Add: Set a key in set/dictionary or add node to tree
+Delete: Remove a key or node
+Iterate: Find next item in data structure
+Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
+
+
+
+Sorting
+
+Describe in words how the Bubble Sort algorithm works.
+
+The Bubble Sort algorithm sorts a list of numbers starting from the left and 
+comparing it with the number to the right of it. If the first number is
+larger, it is swapped with the second number. Then, the second and third numbers
+are compared and if it's not in order, the numbers swap. This goes on until it 
+reaches the end of the list, and the big numbers "bubble" up to the top.
+
+
+Describe in words how the Merge Sort algorithm works.
+
+This algorithm sorts two lists and then merges them into a new list by first 
+dividing the list in half until each number is in its own list. Next, sort each
+pair of numbers and then merge them back into a list of two, then a list of 
+four, etc. In the end, you have a complete list that is also sorted.
+
+
+Describe in words how the Quick Sort algorithm works.
+
+The Quick Sort algorithm arbitrarily chooses a random pivot in a list of numbers
+and checks each number from the left. Numbers that are lower than the pivot get
+swapped to the left and numbers higher than the pivot are swapped to the right
+until all numbers are checked. Then the pivot is moved to a spot where the lower
+numbers are on the left and the higher numbers are on the right. The pivot can 
+be moved only once per iteration.
